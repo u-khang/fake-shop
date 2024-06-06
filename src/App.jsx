@@ -7,6 +7,8 @@ import Checkout from './pages/Checkout.jsx'
 import Product from './pages/Product.jsx'
 import Shop from './pages/Shop.jsx'
 
+import Test from './pages/Test.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop/>,
+      },
+      {
+        path: "/test",
+        element: <Test/>,
       },
     ],
   },
