@@ -19,7 +19,6 @@ function ItemCard({id, name, price, image}) {
                 <Link>
                     <p>{price}</p>
                 </Link>
-                <Button text={'add to cart'}></Button>
             </div>
         </div>
     )
