@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav.jsx'
 
-const Root = () => {
+function Root() {
     return (
-        <>
-            <p>this is root</p>
-            <Outlet />
-        </>
+        <div>
+            <Nav/>
+            <Outlet/>
+        </div>
     )
 }
 
