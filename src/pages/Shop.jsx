@@ -1,19 +1,10 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
 import { Form } from "react-router-dom"
 import Button from "../components/Button"
+import productsData from "../products.json"
 
+const products = JSON.parse(JSON.stringify(productsData));
 
 function Shop() {
-
-    const [products, setProducts] = useState(null);
-
-    useEffect(() => {
-        fetch("../products.json", { mode: "cors" })
-          .then((response) => setProducts(response.json()))
-          .catch((error) => console.error(error));
-      }, []);
 
     return (
         <div>
@@ -21,7 +12,11 @@ function Shop() {
                 <input type="text" placeholder="chocolate mille feuille"></input>
                 <Button text="search"/>
             </Form>
-            <p>{products[1]["name"]}</p>
+            <div>
+                {products.map((product) => {
+                    return <p>{product.name} {product.price}</p>
+                })}
+            </div>
         </div>
     )
 }
