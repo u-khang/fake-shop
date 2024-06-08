@@ -7,8 +7,8 @@ function Test() {
             <ItemCard id={1} name={"burger"} image={'../src/assets/burger.jpg'} price={15.99}></ItemCard>
             <p>{burger}</p>
         </div>
-        
     )
+    
 }
 
 export default Test

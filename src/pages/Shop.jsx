@@ -1,6 +1,7 @@
 import { Form } from "react-router-dom"
 import Button from "../components/Button"
 import productsData from "../products.json"
+import { Link } from "react-router-dom";
 
 const products = JSON.parse(JSON.stringify(productsData));
 
@@ -14,7 +15,12 @@ function Shop() {
             </Form>
             <div>
                 {products.map((product) => {
-                    return <p>{product.name} {product.price}</p>
+                    return (
+                    <div>
+                        <Link to={`${product.id}`}>
+                            <p>{product.id} {product.name} {product.price}</p>
+                        </Link>
+                    </div>)
                 })}
             </div>
         </div>

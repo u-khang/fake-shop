@@ -8,6 +8,7 @@ import Product from './pages/Product.jsx'
 import Shop from './pages/Shop.jsx'
 
 import Test from './pages/Test.jsx'
+import { loader as productLoader} from './pages/Product.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,12 +28,13 @@ const router = createBrowserRouter([
         element: <Checkout/>,
       },
       {
-        path: "/product",
-        element: <Product/>,
-      },
-      {
         path: "/shop",
         element: <Shop/>,
+      },
+      {
+        path: "/shop/:id",
+        element: <Product/>,
+        loader: productLoader,
       },
       {
         path: "/test",
