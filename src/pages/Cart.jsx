@@ -1,11 +1,15 @@
 import { FakeShop } from "../helper/contextProvider";
 import { useContext } from "react";
+import Button from "../components/Button.jsx";
 
 function Cart() {
     const { getCart, removeProductFromCart, updateProduct } = useContext(FakeShop);
     return <div>{getCart().map(
         (product) => {
-            return <p>{product.id} {product.name} {product.price} {product.quantity}</p>
+            return <div>
+                {product.id} {product.name} {product.price} {product.quantity}
+                <Button text="remove item" onClick={() => removeProductFromCart(product.id)}></Button>
+            </div>
         }
     )}</div>
 }
