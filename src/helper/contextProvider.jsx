@@ -30,7 +30,6 @@ export default function ShopProvider({ children }) {
   };
 
   const removeProductFromCart = (id) => {
-    console.log("cool");
     cartLS.removeProduct(id);
     setCart(cartLS.get());
   };

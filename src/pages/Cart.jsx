@@ -3,7 +3,11 @@ import { useContext } from "react";
 
 function Cart() {
     const { getCart, removeProductFromCart, updateProduct } = useContext(FakeShop);
-    return <p>{getCart()[0].name}</p>
+    return <div>{getCart().map(
+        (product) => {
+            return <p>{product.id} {product.name} {product.price} {product.quantity}</p>
+        }
+    )}</div>
 }
 
 export default Cart
