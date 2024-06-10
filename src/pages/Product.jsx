@@ -11,7 +11,7 @@ export async function loader({ params }) {
 }
 
 function Product() {
-    const { id, name, price} = useLoaderData();
+    const { id, name, price } = useLoaderData();
 
     return (
         <div>

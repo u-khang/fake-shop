@@ -45,7 +45,7 @@ export default function ShopProvider({ children }) {
   };
 
   useEffect(() => {
-      setProducts(productsJSON);
+    setProducts(productsJSON);
   }, []);
 
   return (
