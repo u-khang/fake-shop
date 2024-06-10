@@ -43,5 +43,14 @@
       "price": "19.99",
       "prefix": "$",
       "image": "plant.jpg"
+    },
+    {
+      "id": "5",
+      "name": "eggplant",
+      "path": "/shop/eggplant",
+      "description": "an eggplant",
+      "price": "252134.15",
+      "prefix": "$",
+      "image": "eggplant.jpg"
     }
   ]

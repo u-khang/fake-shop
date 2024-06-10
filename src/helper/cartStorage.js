@@ -1,15 +1,15 @@
-class CartStorage {
+export default class CartStorage {
   constructor() {
-      this.cartItems = this.get();
+    this.cartItems = this.get();
   }
 
   get() {
-      const cartItems = JSON.parse(localStorage.getItem("cart"));
-      if (!cartItems) return [];
-      return cartItems.map((item) => ({
-        ...item,
-        quantity: parseInt(item.quantity),
-      }));
+    const cartItems = JSON.parse(localStorage.getItem("cart"));
+    if (!cartItems) return [];
+    return cartItems.map((item) => ({
+      ...item,
+      quantity: parseInt(item.quantity),
+    }));
   }
 
   set() {
@@ -17,31 +17,30 @@ class CartStorage {
   }
 
   has(id) {
-    const product = this.cartItems.find((product) => product.id == id);
-    if (product) return true;
+    const item = this.cartItems.find((item) => item.id == id);
+    if (item) return true;
     return false;
   }
     
   addProduct(id, quantity = 1) {
-      const product = this.cartItems.find((product) => product.id == id);
-      if (product) product.quantity++;
-      else {
-        const product = { id, quantity };
-        this.cartItems.push(product);
-      }
-      this.set();
+    const item = this.cartItems.find((item) => item.id == id);
+    if (item) item.quantity++;
+    else {
+      const item = { id, quantity };
+      this.cartItems.push(item);
+    }
+    this.set();
   }
 
   removeProduct(id) {
-    this.cartItems = this.cartItems.filter((product) => product.id != id);
+    this.cartItems = this.cartItems.filter((item) => item.id != id);
     this.set();
   }
 
   updateProduct(id, quantity) {
-    const product = this.cartItems.find((product) => product.id == id);
-    if (product) product.quantity = quantity;
+    const item = this.cartItems.find((item) => item.id == id);
+    if (item) item.quantity = quantity;
     this.set();
   }
 }
 
-export default CartStorage

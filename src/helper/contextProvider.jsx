@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
-import CartStorage from "./cartStorage";
+import CartStorage from "./cartStorage.js";
 import productsData from "../products.json"
 
 const productsJSON = JSON.parse(JSON.stringify(productsData));

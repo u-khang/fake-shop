@@ -5,10 +5,10 @@ import Button from "../components/Button.jsx";
 function Cart() {
     const { getCart, removeProductFromCart, updateProduct } = useContext(FakeShop);
     return <div>{getCart().map(
-        (product) => {
+        ({ id, name, price, image, quantity }) => {
             return <div>
-                {product.id} {product.name} {product.price} {product.quantity}
-                <Button text="remove item" onClick={() => removeProductFromCart(product.id)}></Button>
+                {id} {name} {price} {quantity}
+                <Button text="remove item" onClick={() => removeProductFromCart(id)}></Button>
             </div>
         }
     )}</div>
