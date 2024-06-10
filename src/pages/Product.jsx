@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import productsData from "../products.json"
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
-import CartStorage from "../helper/CartStorage.js";
+import CartStorage from "../helper/cartStorage.js";
 
 export async function loader({ params }) {
     const products = JSON.parse(JSON.stringify(productsData));
