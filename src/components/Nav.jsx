@@ -16,12 +16,12 @@ function Nav() {
     return (
         <div 
             id="nav"
-            className='fixed left-0 top-0 flex justify-between w-full p-1 border-b-2 border-pink-700 bg-pink-300 text-2xl'
+            className='z-10 fixed left-0 top-0 flex justify-between w-full p-1 border-b-2 border-pink-700 bg-pink-300 text-2xl '
         >
             <Link to="/" >
                 <div className='flex'>
                     <img src={logo} alt="sugar-logo" className='w-20'/>
-                    <h1 className='m-auto font-Pacifico text-2xl text-yellow-950'>Sweets Club</h1>
+                    <h1 className='m-auto font-Pacifico text-2xl text-yellow-950 '>Sweets Club</h1>
                 </div>
             </Link>
 
@@ -34,16 +34,16 @@ function Nav() {
                 </span>
             </button>
 
-            <nav className={`absolute left-0 top-full z-10 h-48 w-full bg-inherit p-6 ${openMenu ? "border-b-2 border-pink-700" : "hidden"}`}>
+            <nav className={`absolute left-0 top-full h-48 w-full bg-inherit p-6 sm:static sm:block sm:h-auto sm:w-auto sm:p-0 sm:pr-20 ${openMenu ? "border-b-2 border-pink-700" : "hidden"}`}>
                 <ul className='flex flex-col sm:flex-row sm:gap-10'>
-                    <li className='p-6 text-center text-2xl hover:underline focus-visible:underline'>
+                    <li className='p-6 text-center text-2xl hover:underline'>
                         <NavLink 
                             to="/shop"
                         >
                             <p>Shop</p>
                         </NavLink>
                     </li>
-                    <li className='p-6 text-center text-2xl hover:underline focus-visible:underline'>
+                    <li className='p-6 text-center text-2xl hover:underline'>
                         <NavLink
                             to="/cart" 
                         >
