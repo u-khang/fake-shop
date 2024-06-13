@@ -26,7 +26,7 @@ function Nav() {
             </Link>
 
             <button
-                className="absolute right-6 top-6 scale-125 sm:hidden"
+                className="absolute right-6 top-8 scale-125 sm:hidden"
                 onClick={toggleMenu}
             >
                 <span className="material-symbols-outlined">
