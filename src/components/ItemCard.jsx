@@ -1,25 +1,21 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
 
-function ItemCard({id, name, price, image}) {
+function ItemCard({id, name, price, image, prefix="$"}) {
     return (
-        <div>
-            <div>
-                <Link to={`${id}`}>
+        <div className="border w-60 rounded-lg">
+            <Link to={`/shop/${id}`}>
+                <div>
                     <img 
+                        className="rounded-t-md"
                         src={image}
                         alt={name}
                     />
-                </Link>
-            </div>
-            <div>
-                <Link>
+                </div>
+                <div className="p-2 py-3">
                     <p>{name}</p>
-                </Link>
-                <Link>
-                    <p>{price}</p>
-                </Link>
-            </div>
+                    <p>{prefix}{price}</p>
+                </div>
+            </Link>
         </div>
     )
 }

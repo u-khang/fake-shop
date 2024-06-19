@@ -9,6 +9,7 @@ function Shop() {
 
     return (
         <div>
+            <div className='h-44'></div>
             <Form>
                 <input type="text" placeholder="chocolate mille feuille"></input>
                 <Button text="search"/>

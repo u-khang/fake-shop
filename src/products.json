@@ -2,7 +2,7 @@
     {
       "id": "0",
       "name": "White & Milk Chocolate Slice",
-      "path": "",
+      "path": "assets/product-imgs/cakes/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
@@ -103,8 +103,8 @@
       "id": "10",
       "name": "Hot Chocolate",
       "path": "",
-      "description": "7.50",
-      "price": "",
+      "description": "",
+      "price": "7.50",
       "prefix": "$",
       "image": "hot-chocolate.jpeg",
       "category": "drink"
@@ -112,9 +112,9 @@
     {
       "id": "11",
       "name": "Iced Cappuccino",
-      "path": "8.50",
+      "path": "",
       "description": "",
-      "price": "",
+      "price": "8.50",
       "prefix": "$",
       "image": "iced-cappuccino.jpeg",
       "category": "drink"
@@ -122,9 +122,9 @@
     {
       "id": "12",
       "name": "Iced Matcha",
-      "path": "7.40",
+      "path": "",
       "description": "",
-      "price": "",
+      "price": "7.40",
       "prefix": "$",
       "image": "iced-matcha.jpeg",
       "category": "drink"
