@@ -17,7 +17,7 @@ function Nav() {
         <div 
             id="nav"
             // className='z-10 fixed left-0 top-0 flex justify-between w-full p-1 border-b-2 border-pink-700 bg-pink-300 text-2xl h-44'
-            className="fixed z-10 w-full h-20 bg-red-50 sm:h-28"
+            className="fixed w-full h-20 bg-red-50 sm:h-28"
         >   
             <div className='flex h-full p-3'>
                 <div className='w-1/4 m-auto'>

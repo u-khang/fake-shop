@@ -1,56 +1,132 @@
 [
     {
       "id": "0",
-      "name": "Beige Sofa",
-      "path": "/shop/beige-sofa",
+      "name": "White & Milk Chocolate Slice",
+      "path": "",
       "description": "",
-      "price": "129.99",
+      "price": "7.50",
       "prefix": "$",
-      "image": "beige-sofa.jpg"
+      "image": "white-milk-chocolate.jpeg",
+      "category": "cake"
     },
     {
       "id": "1",
-      "name": "Wooden Bed",
-      "path": "/shop/wooden-bed",
+      "name": "Chocolate Tiramisu",
+      "path": "",
       "description": "",
-      "price": "269.99",
+      "price": "7.50",
       "prefix": "$",
-      "image": "wooden-bed.jpg"
+      "image": "chocolate-tiramisu.jpeg",
+      "category": "cake"
     },
     {
       "id": "2",
-      "name": "White Wooden Cabinet",
-      "path": "/shop/white-wooden-cabinet",
+      "name": "Earl Grey Mousse",
+      "path": "",
       "description": "",
-      "price": "87.98",
+      "price": "8.30",
       "prefix": "$",
-      "image": "white-wooden-cabinet.jpg"
+      "image": "earl-grey-mousse.jpeg",
+      "category": "cake"
     },
     {
       "id": "3",
-      "name": "cat",
-      "path": "/shop/cat",
-      "description": "cat",
-      "price": "999.99",
+      "name": "Chocolate Mousse",
+      "path": "",
+      "description": "",
+      "price": "8.30",
       "prefix": "$",
-      "image": "cat.jpg"
+      "image": "chocolate-mousse.jpeg",
+      "category": "cake"
     },
     {
       "id": "4",
-      "name": "Zanzibar Gem",
-      "path": "/shop/zanzibar-gem",
-      "description": "Houseplants make your home more beautiful, purify your air, boost your mood, help you sleep, and relieve dryness by raising the humidity in your rooms",
-      "price": "19.99",
+      "name": "Green Tea Mousse",
+      "path": "",
+      "description": "",
+      "price": "7.50",
       "prefix": "$",
-      "image": "plant.jpg"
+      "image": "green-tea-mousse.jpeg",
+      "category": "cake"
     },
     {
       "id": "5",
-      "name": "eggplant",
-      "path": "/shop/eggplant",
-      "description": "an eggplant",
-      "price": "252134.15",
+      "name": "Boston Cream Donut",
+      "path": "",
+      "description": "",
+      "price": "2.75",
       "prefix": "$",
-      "image": "eggplant.jpg"
+      "image": "boston-cream-donut.jpeg",
+      "category": "bun"
+    },
+    {
+      "id": "6",
+      "name": "Chocolate Cornet",
+      "path": "",
+      "description": "",
+      "price": "2.75",
+      "prefix": "$",
+      "image": "chocolate-cornet.jpeg",
+      "category": "bun"
+    },
+    {
+      "id": "7",
+      "name": "Cream Cornet",
+      "path": "",
+      "description": "",
+      "price": "2.75",
+      "prefix": "$",
+      "image": "cream-cornet.jpeg",
+      "category": "bun"
+    },
+    {
+      "id": "8",
+      "name": "Green Tea Melon",
+      "path": "",
+      "description": "",
+      "price": "3.30",
+      "prefix": "$",
+      "image": "green-tea-melon.jpeg",
+      "category": "bun"
+    },
+    {
+      "id": "9",
+      "name": "Red Bean Donut",
+      "path": "",
+      "description": "",
+      "price": "2.75",
+      "prefix": "$",
+      "image": "red-bean-donut.jpeg",
+      "category": "bun"
+    },
+    {
+      "id": "10",
+      "name": "Hot Chocolate",
+      "path": "",
+      "description": "7.50",
+      "price": "",
+      "prefix": "$",
+      "image": "hot-chocolate.jpeg",
+      "category": "drink"
+    },
+    {
+      "id": "11",
+      "name": "Iced Cappuccino",
+      "path": "8.50",
+      "description": "",
+      "price": "",
+      "prefix": "$",
+      "image": "iced-cappuccino.jpeg",
+      "category": "drink"
+    },
+    {
+      "id": "12",
+      "name": "Iced Matcha",
+      "path": "7.40",
+      "description": "",
+      "price": "",
+      "prefix": "$",
+      "image": "iced-matcha.jpeg",
+      "category": "drink"
     }
   ]
