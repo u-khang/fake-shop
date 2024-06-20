@@ -4,16 +4,13 @@ import productsData from "../products.json"
 import { Link } from "react-router-dom";
 
 const products = JSON.parse(JSON.stringify(productsData));
+console.log(products);
 
 function Shop() {
 
     return (
         <div>
             <div className='h-44'></div>
-            <Form>
-                <input type="text" placeholder="chocolate mille feuille"></input>
-                <Button text="search"/>
-            </Form>
             <div>
                 {products.map((product) => {
                     return (

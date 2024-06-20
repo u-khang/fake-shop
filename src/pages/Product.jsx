@@ -15,6 +15,7 @@ function Product() {
 
     return (
         <div>
+            <div className="h-44"></div>
             <p>{id} {name} {price}</p>
             <Link to={"/checkout"}>to checkout</Link>
             <Button 

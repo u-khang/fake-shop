@@ -71,18 +71,22 @@ function Nav() {
                             // className='p-6 text-center text-2xl hover:underline'
                         >
                             <NavLink 
-                                to="/shop"
+                                to="/cakes"
                             >
                                 <p className='p-4 border-y'>Cakes</p>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink>
-                                <p className='p-4 border-b'>Pastries</p>
+                            <NavLink
+                                to="/buns"
+                            >
+                                <p className='p-4 border-b'>Buns</p>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink>
+                            <NavLink
+                                to="/drinks"
+                            >
                                 <p className='p-4 border-b'>Drinks</p>
                             </NavLink>
                         </li>
@@ -105,17 +109,21 @@ function Nav() {
                 <nav className='hidden md:block bg-red-50 h-14'>
                     <div className='w-80 flex m-auto pt-3 text-slate-600 font-bold tracking-wider text-center'>
                         <div className='w-1/3'>
-                            <NavLink to='/shop'>
+                            <NavLink to='/cakes'>
                                 <p className=''>Cakes</p>
                             </NavLink>
                         </div>
                         <div className='w-1/3'>
-                            <NavLink>
-                                <p className=''>Pastries</p>
+                            <NavLink
+                                to="/buns"
+                            >
+                                <p className=''>Buns</p>
                             </NavLink>
                         </div>
                         <div className='w-1/3'>
-                            <NavLink>
+                            <NavLink
+                                to="/drinks"
+                            >
                                 <p className=''>Drinks</p>
                             </NavLink>
                         </div>

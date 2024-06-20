@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function ItemCard({id, name, price, image, prefix="$"}) {
     const [underline, setUnderline] = useState(false);
-    const handleMouseEnter = e => {
+    const handleMouseOver = e => {
         setUnderline(true);
     }
     const handleMouseOut = e => {
@@ -11,7 +11,7 @@ function ItemCard({id, name, price, image, prefix="$"}) {
     }
 
     return (
-        <div className="border rounded-lg transition hover:-translate-y-1 hover:shadow-lg" onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
+        <div className="border rounded-lg transition hover:-translate-y-1 hover:shadow-lg" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <Link to={`/shop/${id}`}>
                 <div>
                     <img 
