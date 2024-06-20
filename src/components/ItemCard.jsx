@@ -11,7 +11,7 @@ function ItemCard({id, name, price, image, prefix="$"}) {
     }
 
     return (
-        <div className="border rounded-lg" onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
+        <div className="border rounded-lg transition hover:-translate-y-1 hover:shadow-lg" onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
             <Link to={`/shop/${id}`}>
                 <div>
                     <img 
@@ -20,9 +20,9 @@ function ItemCard({id, name, price, image, prefix="$"}) {
                         alt={name}
                     />
                 </div>
-                <div className="p-2 py-3">
-                    <p className={`${underline ? "underline" : "none"}`}>{name}</p>
-                    <p>{prefix}{price}</p>
+                <div className="p-4 pb-6">
+                    <p className={`mb-2 ${underline ? "underline" : ""}`}>{name}</p>
+                    <p className="text-lg">{prefix}{price}</p>
                 </div>
             </Link>
         </div>

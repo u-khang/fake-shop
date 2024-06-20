@@ -6,6 +6,9 @@ import Cart from './pages/Cart.jsx'
 import Checkout from './pages/Checkout.jsx'
 import Product from './pages/Product.jsx'
 import Shop from './pages/Shop.jsx'
+import Cakes from './pages/Cakes.jsx'
+import Buns from './pages/Buns.jsx'
+import Drinks from './pages/Drinks.jsx'
 
 import Test from './pages/Test.jsx'
 import { loader as productLoader} from './pages/Product.jsx'
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <Checkout/>,
+      },
+      {
+        path: "/cakes",
+        element: <Cakes/>,
+      },
+      {
+        path: "/buns",
+        element: <Buns/>,
+      },
+      {
+        path: "/drinks",
+        element: <Drinks/>,
       },
       {
         path: "/shop",
