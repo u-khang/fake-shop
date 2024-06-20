@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function ItemCard({id, name, price, image, prefix="$"}) {
+    const [underline, setUnderline] = useState(false);
+    const handleMouseEnter = e => {
+        setUnderline(true);
+    }
+    const handleMouseOut = e => {
+        setUnderline(false);
+    }
+
     return (
-        <div className="border w-60 rounded-lg">
+        <div className="border rounded-lg" onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
             <Link to={`/shop/${id}`}>
                 <div>
                     <img 
@@ -12,7 +21,7 @@ function ItemCard({id, name, price, image, prefix="$"}) {
                     />
                 </div>
                 <div className="p-2 py-3">
-                    <p>{name}</p>
+                    <p className={`${underline ? "underline" : "none"}`}>{name}</p>
                     <p>{prefix}{price}</p>
                 </div>
             </Link>

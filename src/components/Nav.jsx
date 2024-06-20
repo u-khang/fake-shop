@@ -61,7 +61,7 @@ function Nav() {
             <div>
                 <nav 
                     // className={`absolute left-0 top-full h-48 w-full bg-inherit p-6 sm:static sm:block sm:h-auto sm:w-auto sm:p-0 sm:pr-20 ${openMenu ? "border-b-2 border-pink-700" : "hidden"}`}
-                    className={`${openMenu ? "border-b-2 bg-red-50" : "hidden"}`}
+                    className={`${openMenu ? "bg-red-50" : "hidden"}`}
                 >
                     <ul 
                         // className='flex flex-col sm:flex-row sm:gap-10'
@@ -73,17 +73,17 @@ function Nav() {
                             <NavLink 
                                 to="/shop"
                             >
-                                <p className='p-4 border-y-2'>Cakes</p>
+                                <p className='p-4 border-y'>Cakes</p>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink>
-                                <p className='p-4 border-b-2'>Pastries</p>
+                                <p className='p-4 border-b'>Pastries</p>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink>
-                                <p className='p-4 border-b-2'>Drinks</p>
+                                <p className='p-4 border-b'>Drinks</p>
                             </NavLink>
                         </li>
                         <li 
@@ -92,12 +92,12 @@ function Nav() {
                             <NavLink
                                 to="/cart" 
                             >
-                                <p className='p-4 border-b-2'>Cart</p>
+                                <p className='p-4 border-b'>Cart</p>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink>
-                                <p className='p-4'>User</p>
+                                <p className='p-4 border-b'>User</p>
                             </NavLink>
                         </li>
                     </ul>
