@@ -11,7 +11,7 @@ function Test() {
             <div className='h-44'></div>
             <ItemCard id={product1.id} name={product1.name} image={cake} price={product1.price}></ItemCard>
             {/* <p>{`../${product1.path}${product1.image}`}</p> */}
-            <img src={cake}></img>
+            <img src={'/public/cakes/white-milk-chocolate.jpeg'}></img>
         </div>
     )
     

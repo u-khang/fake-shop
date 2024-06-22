@@ -7,14 +7,6 @@ const cakeItems = products.filter((product) => {
     return product.category == "cake"
 })
 
-// const images = require.context("../assets/product-imgs", true);
-// function loadImage(image) {
-//     return images(`./${image}`);
-// }
-
-// products.forEach((product) => {
-//     product.image = loadImage(product.image);
-// });
 
 function Cakes() {
     return (
