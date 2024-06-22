@@ -6,7 +6,15 @@ const products = JSON.parse(JSON.stringify(productsData));
 const cakeItems = products.filter((product) => {
     return product.category == "cake"
 })
-console.log(cakeItems);
+
+// const images = require.context("../assets/product-imgs", true);
+// function loadImage(image) {
+//     return images(`./${image}`);
+// }
+
+// products.forEach((product) => {
+//     product.image = loadImage(product.image);
+// });
 
 function Cakes() {
     return (
@@ -21,6 +29,7 @@ function Cakes() {
                                 id={product.id}
                                 name={product.name}
                                 price={product.price}
+                                path={product.path}
                                 image={product.image}
                                 prefix={product.prefix}
                             />

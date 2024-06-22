@@ -1,6 +1,22 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+// const imgModules = import.meta.glob('../assets/product-imgs/*.jpeg')
+// console.log(imgModules);
+
+// const images = require.context("../assets/product-imgs", true);
+// function loadImage(image) {
+//     return images(`./${image}`);
+// }
+
+
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
+// const images = importAll(require.context('../assets/product-imgs', false, /\.(png|jpe?g|svg)$/));
+
 function ItemCard({id, name, price, image, prefix="$"}) {
     const [underline, setUnderline] = useState(false);
     const handleMouseOver = e => {
@@ -16,7 +32,10 @@ function ItemCard({id, name, price, image, prefix="$"}) {
                 <div>
                     <img 
                         className="rounded-t-md"
-                        src={image}
+                        // src={loadImage(image)}
+                        // src={images[image]}
+                        // src={imgModules[image]().then((mod) => mod)}
+                        src={''}
                         alt={name}
                     />
                 </div>

@@ -2,7 +2,7 @@
     {
       "id": "0",
       "name": "White & Milk Chocolate Slice",
-      "path": "assets/product-imgs/cakes/",
+      "path": "/cakes/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
@@ -12,7 +12,7 @@
     {
       "id": "1",
       "name": "Chocolate Tiramisu",
-      "path": "",
+      "path": "/cakes/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
@@ -22,7 +22,7 @@
     {
       "id": "2",
       "name": "Earl Grey Mousse",
-      "path": "",
+      "path": "/cakes/",
       "description": "",
       "price": "8.30",
       "prefix": "$",
@@ -32,7 +32,7 @@
     {
       "id": "3",
       "name": "Chocolate Mousse",
-      "path": "",
+      "path": "/cakes/",
       "description": "",
       "price": "8.30",
       "prefix": "$",
@@ -42,7 +42,7 @@
     {
       "id": "4",
       "name": "Green Tea Mousse",
-      "path": "",
+      "path": "/cakes/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
@@ -52,7 +52,7 @@
     {
       "id": "5",
       "name": "Boston Cream Donut",
-      "path": "",
+      "path": "/buns/",
       "description": "",
       "price": "2.75",
       "prefix": "$",
@@ -62,7 +62,7 @@
     {
       "id": "6",
       "name": "Chocolate Cornet",
-      "path": "",
+      "path": "/buns/",
       "description": "",
       "price": "2.75",
       "prefix": "$",
@@ -72,7 +72,7 @@
     {
       "id": "7",
       "name": "Cream Cornet",
-      "path": "",
+      "path": "/buns/",
       "description": "",
       "price": "2.75",
       "prefix": "$",
@@ -82,7 +82,7 @@
     {
       "id": "8",
       "name": "Green Tea Melon",
-      "path": "",
+      "path": "/drinks/",
       "description": "",
       "price": "3.30",
       "prefix": "$",
@@ -92,7 +92,7 @@
     {
       "id": "9",
       "name": "Red Bean Donut",
-      "path": "",
+      "path": "/drinks/",
       "description": "",
       "price": "2.75",
       "prefix": "$",
@@ -102,7 +102,7 @@
     {
       "id": "10",
       "name": "Hot Chocolate",
-      "path": "",
+      "path": "/drinks/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
@@ -112,7 +112,7 @@
     {
       "id": "11",
       "name": "Iced Cappuccino",
-      "path": "",
+      "path": "/drinks/",
       "description": "",
       "price": "8.50",
       "prefix": "$",
@@ -122,7 +122,7 @@
     {
       "id": "12",
       "name": "Iced Matcha",
-      "path": "",
+      "path": "/drinks/",
       "description": "",
       "price": "7.40",
       "prefix": "$",
