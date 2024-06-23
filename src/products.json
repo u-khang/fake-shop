@@ -101,32 +101,42 @@
     },
     {
       "id": "10",
-      "name": "Hot Chocolate",
+      "name": "Iced Latte",
       "path": "/drinks/",
       "description": "",
       "price": "7.50",
       "prefix": "$",
-      "image": "hot-chocolate.jpeg",
+      "image": "iced-latte.jpeg",
       "category": "drink"
     },
     {
       "id": "11",
-      "name": "Iced Cappuccino",
+      "name": "Original Milkshake",
       "path": "/drinks/",
       "description": "",
       "price": "8.50",
       "prefix": "$",
-      "image": "iced-cappuccino.jpeg",
+      "image": "milkshake.jpeg",
       "category": "drink"
     },
     {
       "id": "12",
-      "name": "Iced Matcha",
+      "name": "Mango Smoothie",
       "path": "/drinks/",
       "description": "",
       "price": "7.40",
       "prefix": "$",
-      "image": "iced-matcha.jpeg",
+      "image": "mango-smoothie.jpeg",
+      "category": "drink"
+    },
+    {
+      "id": "13",
+      "name": "Cold Brew",
+      "path": "/drinks/",
+      "description": "",
+      "price": "7.40",
+      "prefix": "$",
+      "image": "cold-brew.jpeg",
       "category": "drink"
     }
   ]

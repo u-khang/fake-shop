@@ -65,42 +65,54 @@ function Nav() {
                 >
                     <ul 
                         // className='flex flex-col sm:flex-row sm:gap-10'
-                        className='text-slate-600 font-bold tracking-wider text-xs'
+                        className='font-bold font-bold tracking-wider text-md'
                     >
                         <li 
-                            // className='p-6 text-center text-2xl hover:underline'
+                            className='hover:underline'
                         >
                             <NavLink 
                                 to="/cakes"
+                                onClick={closeMenu}
                             >
                                 <p className='p-4 border-y'>Cakes</p>
                             </NavLink>
                         </li>
-                        <li>
+                        <li
+                            className='hover:underline'
+                        >
                             <NavLink
                                 to="/buns"
+                                onClick={closeMenu}
                             >
                                 <p className='p-4 border-b'>Buns</p>
                             </NavLink>
                         </li>
-                        <li>
+                        <li
+                            className='hover:underline'
+                        >
                             <NavLink
                                 to="/drinks"
+                                onClick={closeMenu}
                             >
                                 <p className='p-4 border-b'>Drinks</p>
                             </NavLink>
                         </li>
                         <li 
-                            // className='p-6 text-center text-2xl hover:underline'
+                            className='hover:underline'
                         >
                             <NavLink
                                 to="/cart" 
+                                onClick={closeMenu}
                             >
                                 <p className='p-4 border-b'>Cart</p>
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink>
+                        <li
+                            className='hover:underline'
+                        >
+                            <NavLink
+                                onClick={closeMenu}
+                            >
                                 <p className='p-4 border-b'>User</p>
                             </NavLink>
                         </li>
@@ -108,19 +120,19 @@ function Nav() {
                 </nav>
                 <nav className='hidden md:block bg-red-50 h-14'>
                     <div className='w-80 flex m-auto pt-3 text-slate-600 font-bold tracking-wider text-center'>
-                        <div className='w-1/3'>
+                        <div className='w-1/3 hover:underline'>
                             <NavLink to='/cakes'>
                                 <p className=''>Cakes</p>
                             </NavLink>
                         </div>
-                        <div className='w-1/3'>
+                        <div className='w-1/3 hover:underline'>
                             <NavLink
                                 to="/buns"
                             >
                                 <p className=''>Buns</p>
                             </NavLink>
                         </div>
-                        <div className='w-1/3'>
+                        <div className='w-1/3 hover:underline'>
                             <NavLink
                                 to="/drinks"
                             >

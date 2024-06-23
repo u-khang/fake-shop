@@ -11,7 +11,7 @@ function ItemCard({id, name, price, image, prefix="$"}) {
     }
 
     return (
-        <div className="border rounded-lg transition hover:-translate-y-1 hover:shadow-lg" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        <div className="border rounded-lg hover:shadow-lg" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <Link to={`/shop/${id}`}>
                 <div>
                     <img 
