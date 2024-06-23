@@ -24,7 +24,7 @@ function Product() {
                     <p className="mb-4">Lorem ipsum souffle, sit umami confiture adipisicing elit. Scone eligendi impedit expedita nutella vitae waffle ipsum dango.</p>
                     <p className="mb-4">Allergens: komugi, shio, shoyu, koshou</p>
                     <Button 
-                        className="w-full bg-rose-950"
+                        className="w-full bg-rose-950 hover:bg-rose-900 transition"
                         text="Add to cart" 
                         onClick={() => {
                             const cart = new CartStorage();

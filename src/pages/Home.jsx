@@ -1,5 +1,5 @@
 import Button from '../components/Button'
-import cakeShop from '../assets/cake_shop.jpg'
+import cakeShop from '../assets/cake_shop2.jpg'
 
 function Home() {
     return (
