@@ -20,7 +20,7 @@ function Nav() {
             className="fixed w-full h-20 bg-red-50 sm:h-28"
         >   
             <div className='flex h-full p-3'>
-                <div className='w-1/4 m-auto'>
+                <div className='w-1/4 m-auto md:pl-24'>
                     <span class="material-symbols-outlined ml-6">
                         search
                     </span>
@@ -30,9 +30,9 @@ function Nav() {
                     <Link to="/" >
                         <div className='flex h-full w-40 sm:w-72 m-auto'>
                             <img src={logo} alt="sugar-logo" className=''/>
-                            <h1 className='m-auto font-Pacifico text-xl text-rose-950 sm:text-3xl'
+                            <h1 className='m-auto font-Pacifico text-xl text-rose-950 sm:text-4xl'
                                 // className='m-auto font-Pacifico text-2xl text-yellow-950 '
-                            >Sweets Club
+                            >Sugar Rush
                             </h1>
                         </div>
                     </Link>

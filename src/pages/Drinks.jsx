@@ -9,9 +9,9 @@ const drinkItems = products.filter((product) => {
 
 function Cakes() {
     return (
-        <div className="px-4">
+        <div className="px-4 pb-8 md:mx-24">
             <div className='h-24 sm:h-32 md:h-48'></div>
-            <h1 className="text-3xl">Drinks</h1>
+            <h1 className="text-4xl text-rose-950">Drinks</h1>
             <div
                 className="mt-6 grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 md:gap-6"
             >
