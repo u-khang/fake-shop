@@ -22,7 +22,7 @@ function ItemCard({id, name, price, image, prefix="$"}) {
                 </div>
                 <div className="p-4 pb-6">
                     <p className={`mb-2 ${underline ? "underline" : ""}`}>{name}</p>
-                    <p className="text-lg">{prefix}{price}</p>
+                    <p className="text-gray-500 font-montserrat font-bold">{prefix}{price}</p>
                 </div>
             </Link>
         </div>

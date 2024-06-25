@@ -16,7 +16,7 @@ function Button({text, link = '', onClick = '', className = ''}) {
                 className={`rounded-lg bg-black px-6 py-4 text-white ${className}`}
                 onClick={onClick}
             >
-                <p>{text}</p>
+                <p className="font-montserrat text-sm">{text}</p>
             </button>
         )
     }

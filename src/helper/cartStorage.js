@@ -4,7 +4,7 @@ export default class CartStorage {
   }
 
   get() {
-    const cartItems = JSON.parse(localStorage.getItem("cart"));
+    const cartItems = JSON.parse(sessionStorage.getItem("cart"));
     if (!cartItems) return [];
     return cartItems.map((item) => ({
       ...item,
@@ -13,7 +13,7 @@ export default class CartStorage {
   }
 
   set() {
-    localStorage.setItem("cart", JSON.stringify(this.cartItems));
+    sessionStorage.setItem("cart", JSON.stringify(this.cartItems));
   }
 
   has(id) {
