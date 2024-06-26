@@ -13,4 +13,4 @@ Static e-commerce store with React
 
 # Screenshots
 
-!(/public/screenshots/demo1.png?raw=true)
+![](/public/screenshots/demo1.png?raw=true)
